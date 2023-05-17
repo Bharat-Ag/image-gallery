@@ -1,1 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Kaushan+Script&family=Poppins:wght@200;300;400;500&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+a,
+li {
+    list-style: none;
+    text-decoration: none;
+}
+
+input,
+button,
+i {
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.header {
+    min-height: 310px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: url("https://img.freepik.com/free-vector/road-night-city-empty-highway-purple-skyline_107791-10081.jpg?w=2000") no-repeat;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(100%) contrast(105%);
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    color: white;
+    max-width: 550px;
+    width: 100%;
+}
+
+.header p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.search_box {
+    height: 45px;
+    margin: 20px 0;
+    position: relative;
+}
+
+.search_box i {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    font-size: 1.2rem;
+    color: rgb(46, 45, 44);
+    transform: translateY(-50%);
+}
+
+.search_box input {
+    width: 100%;
+    height: 100%;
+    font-size: 1.1rem;
+    padding-left: 55px;
+    border-radius: 5px;
+}
+
+.gallery {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.gallery .image {
+    gap: 15px;
+    columns: 5 145px;
+    margin-top: 40px;
+    max-width: 95%;
+}
+
+.image .card {
+    margin-bottom: 14px;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+}
+
+.image .card .desc {
+    position: absolute;
+    bottom: -100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    background: rgb(42, 42, 42);
+    background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+    transition: all .1s ease;
+
+}
+
+.image .card:hover .desc {
+    bottom: 0px;
+}
+
+.credits {
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.credits i {
+    font-size: 1.4rem;
+    margin-right: 10px;
+}
+
+.image .desc .credits span {
+    font-size: 1.5rem;
+}
+
+.card .desc button {
+    padding: 7px 13px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    background: white;
+    border-radius: 8px;
+}
+
+.image img {
+    width: 100%;
+}
+
+.gallery .load-more {
+    margin: 50px 0;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    background: #05A081;
+    color: white;
+    cursor: pointer;
+}
+
+.gallery .load-more.disabled {
+    opacity: .6;
+    pointer-events: none;
+}
+
+@media (max-width:1440px) {
+    .image .card .desc {
+        padding: 10px 15px;
+    }
+
+    .credits i {
+        font-size: 1rem;
+    }
+
+    .image .desc .credits span {
+        font-size: 1rem;
+    }
+
+    .card .desc button {
+        padding: 5px 10px;
+        font-size: .9rem;
+    }
+}
+
+@media (max-width:1192px) {
+    .image .card .desc {
+        padding: 10px 15px;
+    }
+
+    .credits i {
+        font-size: .8rem;
+    }
+
+    .image .desc .credits span {
+        font-size: .7rem;
+    }
+
+    .card .desc button {
+        padding: 3px 7px;
+        font-size: .7rem;
+        border-radius: 5px;
+    }
+}
+
+@media (max-width:652px) {
+    .header {
+        padding: 16px;
+        min-height: 250px;
+    }
+
+    .content {
+        max-width: 445px;
+    }
+
+    .header p {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width:484px) {
+    .content {
+        max-width: 365px;
+    }
+
+    .header p {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width:400px) {
+    .image .card .desc {
+        padding: 10px 15px;
+    }
+
+    .credits i {
+        font-size: .8rem;
+    }
+
+    .header p {
+        font-size: 0.80rem;
+    }
+
+    .image .desc .credits span {
+        font-size: .7rem;
+        max-width: 100px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
