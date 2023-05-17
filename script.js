@@ -7,21 +7,20 @@ let perPage = 15;
 let currentPage = 1;
 
 let search = null;
-
 let generateHTML = (images) => {
 	imgWraper.innerHTML += images.map(img =>
 		`<li class="card">
                 <img src="${img.src.large2x}" alt="img">
                 <div class="desc">
-                <div class="credits">
-                   <i class="fa-solid fa-camera"></i>
-                   <span>${img.photographer}</span>
+                    <div class="credits">
+                       <i class="fa-solid fa-camera"></i>
+                       <span>${img.photographer}</span>
+                    </div>
+                    <button>
+				        <i class="fa-solid fa-download"></i>
+				    </button>
                 </div>
-                <button>
-				           <i class="fa-solid fa-download"></i>
-				        </button>
-                </div>
-     </li>`
+            </li>`
 	).join("");
 }
 
