@@ -295,25 +295,21 @@ i {
 
     .gallery .res_div {
         max-width: 90%;
+        columns: 2 134px;
     }
 }
 
-@media screen and (max-width:320px) {
+@media (max-width:375px) {
     .content {
-        max-width: 270px;
+        max-width: 320px;
     }
 
     .content p {
-        font-size: 0.8rem;
-    }
-
-    .filter {
-        gap: 0;
+        font-size: 1rem;
     }
 
     .btn {
-        padding: 5px 13px;
-        font-size: 0.6em;
+        font-size: 0.8rem;
     }
 
     .heading {
@@ -333,10 +329,41 @@ i {
     }
 
     .main_trending li {
-        padding: 6px 20px 6px 15px;
+        padding: 9px 20px 9px 15px;
+        font-size: 0.8rem;
     }
 
     .gallery .res_div {
         max-width: 90%;
+    }
+}
+
+@media (max-width:375px) {
+    .header {
+        min-height: 210px;
+    }
+
+    .search_box input::placeholder {
+        font-size: .9rem;
+    }
+
+    .filter {
+        margin: 15px auto;
+        gap: 0;
+    }
+
+    .load_more {
+        padding: 10px 27px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:250px) {
+    .filter {
+        display: none;
+    }
+
+    .gallery {
+        margin-top: 20px;
     }
 }
