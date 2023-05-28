@@ -33,7 +33,7 @@ i {
     background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%), url("https://images.pexels.com/photos/2649403/pexels-photo-2649403.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") no-repeat;
     background-size: cover;
     background-position: center;
-    padding: 0 20px;
+    padding: 0 15px;
 }
 
 .content {
@@ -218,10 +218,6 @@ i {
     width: 100%;
 }
 
-.try {
-    border: 2px Solid red;
-}
-
 .image .card .description {
     position: absolute;
     bottom: -100px;
@@ -253,6 +249,7 @@ i {
     color: white;
     display: flex;
     align-items: center;
+    width: 100%;
 }
 
 .credits i {
@@ -295,6 +292,22 @@ i {
     .gallery .res_div {
         max-width: 90%;
         columns: 2 134px;
+    }
+
+    .credits i {
+        font-size: 1rem;
+        margin-right: 10px;
+    }
+
+    .image .card .description {
+        padding: 11px 15px;
+    }
+
+    .image .description .credits span {
+        font-size: 0.9rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 }
 
