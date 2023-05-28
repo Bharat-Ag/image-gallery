@@ -303,10 +303,6 @@ i {
         min-height: 210px;
     }
 
-    .content {
-        max-width: 320px;
-    }
-
     .content p {
         font-size: 1rem;
     }
@@ -358,10 +354,6 @@ i {
 @media (max-width:320px) {
     .filter {
         display: none;
-    }
-
-    .content {
-        width: 90%;
     }
 
     .content p {
