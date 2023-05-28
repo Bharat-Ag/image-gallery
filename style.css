@@ -33,6 +33,7 @@ i {
     background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%), url("https://images.pexels.com/photos/2649403/pexels-photo-2649403.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") no-repeat;
     background-size: cover;
     background-position: center;
+    padding: 0 20px;
 }
 
 .content {
@@ -174,8 +175,6 @@ i {
     pointer-events: auto;
 }
 
-
-
 .main_trending span {
     opacity: 0;
     margin-left: 5px;
@@ -280,9 +279,9 @@ i {
     pointer-events: none;
 }
 
-@media screen and (max-width:450px) {
+@media (max-width:450px) {
     .content {
-        max-width: 340px;
+        width: 100%;
     }
 
     .content p {
@@ -300,6 +299,10 @@ i {
 }
 
 @media (max-width:375px) {
+    .header {
+        min-height: 210px;
+    }
+
     .content {
         max-width: 320px;
     }
@@ -310,9 +313,18 @@ i {
 
     .btn {
         font-size: 0.8rem;
+        padding: 8px 12px;
     }
 
     .heading {
+        font-size: .9rem;
+    }
+
+    .filter {
+        margin: 15px auto;
+    }
+
+    .search_box input::placeholder {
         font-size: .9rem;
     }
 
@@ -335,21 +347,6 @@ i {
 
     .gallery .res_div {
         max-width: 90%;
-    }
-}
-
-@media (max-width:375px) {
-    .header {
-        min-height: 210px;
-    }
-
-    .search_box input::placeholder {
-        font-size: .9rem;
-    }
-
-    .filter {
-        margin: 15px auto;
-        gap: 0;
     }
 
     .load_more {
