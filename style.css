@@ -358,12 +358,29 @@ i {
     }
 }
 
-@media (max-width:250px) {
+@media (max-width:320px) {
     .filter {
         display: none;
     }
 
+    .content {
+        width: 90%;
+    }
+
+    .content p {
+        font-size: 0.8rem;
+    }
+
     .gallery {
+        margin-top: 20px;
+    }
+
+    .download {
+        padding: 3px 8px;
+        font-size: 0.7rem;
+    }
+
+    .gallery .res_div {
         margin-top: 20px;
     }
 }
