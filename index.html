@@ -1,29 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pexel Clone - Bharat Agrawal</title>
+    <title>Image Gallery - Bharat Agrawal</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="./script.js" defer></script>
 
 </head>
+
 <body>
-    <section class="header">
+    <div class="header flex">
         <div class="content">
-            <p>Wokring Image Gallery Like Pexel - royalty free images & videos shared by creators.</p>
+            <p>The best free stock photos, royalty free images & videos shared by creators.</p>
             <div class="search_box">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <input type="text" placeholder="Search image" id="input">
+                <i class="fa-solid fa-magnifying-glass flex" id="search_btn"></i>
+                <input type="text" placeholder="Search for free photos" id="input">
             </div>
         </div>
-    </section>
-    <section class="gallery">
-        <ul class="image">
-        </ul>
-        <button class="load-more">Load More</button>
-    </section>
+    </div>
+    <div class="filter flex">
+        <button class="btn active">Home</button>
+        <button class="btn">Video</button>
+        <button class="btn">Leaderboard</button>
+        <button class="btn">Challenges</button>
+    </div>
+    <div class="gallery">
+        <div class="img_filter flex">
+            <h3 class="heading">Free Stock Photos</h3>
+            <div class="img_filter_option flex" onclick="img_trend()">
+                <span>
+                    Trending
+                </span>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <ul class="main_trending">
+                <li class="active">Trending <span><i class="fa-solid fa-check"></i></span></li>
+                <li class="">New <span><i class="fa-solid fa-check"></i></span></li>
+                <li class="">Following <span><i class="fa-solid fa-check"></i></span></li>
+            </ul>
+        </div>
+        <div class="res_div"></div>
+        <button class="load_more">Load More</button>
+    </div>
 </body>
+
 </html>
